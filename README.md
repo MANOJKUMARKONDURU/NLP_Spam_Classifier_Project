@@ -46,7 +46,7 @@ The model was trained on the **SMS Spam Collection Dataset** containing 5,572 re
 | Property | Details |
 |----------|---------|
 | Name | SMS Spam Collection Dataset |
-| Source |[ UCI Machine Learning Repository ]([url](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset))|
+| Source | [UCI Machine Learning Repository](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) |
 | Total Messages | 5,572 |
 | Spam Messages | 747 (13.4%) |
 | Ham Messages | 4,825 (86.6%) |
