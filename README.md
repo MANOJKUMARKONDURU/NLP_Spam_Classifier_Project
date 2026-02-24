@@ -6,10 +6,10 @@
 
 ## 📌 Table of Contents
 
-- [Overview](#overview)
-- [Demo](#demo)
+- [Overview](#-overview)
+- [Demo](#-demo)
 - [Features](#features)
-- [Dataset](# 📊 Dataset)
+- [Dataset](#-dataset)
 - [Project Structure](#project-structure)
 - [NLP Pipeline](#nlp-pipeline)
 - [Model Performance](#model-performance)
