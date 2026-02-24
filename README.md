@@ -17,3 +17,13 @@
 - [How to Run](#how-to-run)
 - [Tech Stack](#tech-stack)
 - [Results](#results)
+
+---
+
+## 📖 Overview
+
+This is a complete end-to-end machine learning project that detects whether an SMS or Email message is **Spam** or **Ham (Not Spam)**. The project covers the entire ML workflow — from raw data cleaning and exploratory data analysis, to text preprocessing, model training, model comparison, and deployment as a web application.
+
+The model was trained on the **SMS Spam Collection Dataset** containing 5,572 real-world messages and uses a **Multinomial Naive Bayes** classifier with **TF-IDF Vectorization** to achieve state-of-the-art results.
+
+---
