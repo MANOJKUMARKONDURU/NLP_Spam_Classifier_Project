@@ -6,17 +6,17 @@
 
 ## 📌 Table of Contents
 
-- [Overview](#-overview)
-- [Demo](#-demo)
-- [Features](#-features)
-- [Dataset](#-dataset)
-- [Project Structure](#-project-structure)
-- [NLP Pipeline](#-nlp-pipeline)
-- [Model Performance](#-model-performance)
-- [Installation](#-installation)
-- [How to Run](#-how-to-run)
-- [Tech Stack](#-tech-stack)
-- [Results](#-results)
+- [📖 Overview](#-overview)
+- [✨ Features](#-features)
+- [📊 Dataset](#-dataset)
+- [📁 Project Structure](#-project-structure)
+- [🔧 NLP Pipeline](#-nlp-pipeline)
+- [📈 Model Performance](#-model-performance)
+- [⚙️ Installation](#️-installation)
+- [🚀 How to Run](#-how-to-run)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [✅ Results](#-results)
+- [🙌 Acknowledgements](#-acknowledgements)
 
 ---
 
@@ -28,16 +28,16 @@ The model was trained on the **SMS Spam Collection Dataset** containing 5,572 re
 
 ---
 
-## 🎯 Features
+## ✨ Features
 
-- ✅ Real-time spam detection with confidence score
-- ✅ Complete NLP preprocessing pipeline
-- ✅ Comparison of 10+ ML algorithms
-- ✅ Interactive dark-themed Streamlit web app
-- ✅ Prediction history tracking
-- ✅ Example spam and ham messages to test
-- ✅ Word cloud visualizations
-- ✅ Live character and word counter
+- ⚡ Real-time spam detection with confidence score
+- 🔤 Complete NLP text preprocessing pipeline
+- 🤖 10 machine learning algorithms compared
+- 🎨 Interactive dark-themed Streamlit web app
+- 🕓 Prediction history tracking
+- 💡 Example spam and ham messages to test instantly
+- ☁️ Word cloud visualizations for spam and ham
+- 🔢 Live character and word counter in the UI
 
 ---
 
@@ -53,7 +53,7 @@ The model was trained on the **SMS Spam Collection Dataset** containing 5,572 re
 | Features | Message text |
 | Target | spam / ham |
 
-> The dataset is imbalanced — 86.6% ham vs 13.4% spam. This makes **precision** a more important metric than accuracy to avoid false positives.
+> ⚠️ The dataset is imbalanced — 86.6% ham vs 13.4% spam. This makes **precision** a more important metric than accuracy to avoid false positives where a legitimate message is wrongly marked as spam.
 
 ---
 
@@ -70,5 +70,79 @@ nlp-spam-classifier/
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
 ```
+
+---
+
+## 🔧 NLP Pipeline
+
+Every message goes through this preprocessing pipeline before prediction:
+
+```
+📩 Raw Message
+    ↓
+1. 🔡 Lowercase conversion
+    ↓
+2. ✂️  Tokenization             (nltk.word_tokenize)
+    ↓
+3. 🔣 Remove special chars     (keep only alphanumeric)
+    ↓
+4. 🛑 Remove stop words        (nltk.corpus.stopwords)
+    ↓
+5. ❌ Remove punctuation       (string.punctuation)
+    ↓
+6. 🌱 Stemming                 (PorterStemmer)
+    ↓
+7. 📐 TF-IDF Vectorization     (max_features=3000)
+    ↓
+🤖 Multinomial Naive Bayes Prediction
+```
+
+**Example:**
+```
+Input  :  "FREE entry! Win a £1000 prize. Call NOW!!!"
+Output :  "free entri win prize call"
+```
+
+---
+
+## 📈 Model Performance
+
+### 🏆 All 10 Algorithms Compared
+
+| Algorithm | Accuracy | Precision |
+|-----------|----------|-----------|
+| 🌲 Extra Trees (ETC) | 98.36% | 100.00% |
+| 🌳 Random Forest (RF) | 97.87% | 98.33% |
+| ⭐ Multinomial NB | 97.58% | 100.00% |
+| 🔷 SVC | 97.58% | 97.48% |
+| 📉 Logistic Regression | 95.84% | 96.12% |
+| 🎒 Bagging Classifier | 95.74% | 84.06% |
+| 📈 Gradient Boosting | 94.49% | 90.10% |
+| 🌿 Decision Tree | 93.33% | 87.10% |
+| 🚀 AdaBoost | 91.88% | 86.49% |
+| 📍 K-Nearest Neighbors | 90.52% | 100.00% |
+
+### 🤔 Why Multinomial NB was chosen
+
+Three models achieved 100% precision — ETC, KNN and Multinomial NB. Here is why MNB was the final choice:
+
+| Model | Accuracy | Precision | Verdict |
+|-------|----------|-----------|---------|
+| Extra Trees | 98.36% | 100.00% | ❌ Heavy — uses 50 trees, slow to deploy |
+| K-Nearest Neighbors | 90.52% | 100.00% | ❌ Low accuracy, slow on large data |
+| **Multinomial NB** | **97.58%** | **100.00%** | ✅ Best balance — fast, accurate, lightweight |
+
+- ✅ 100% Precision — zero false positives, no legitimate message marked as spam
+- ✅ 97.58% Accuracy — significantly higher than KNN (90.52%)
+- ✅ Lightweight and fast — ideal for real-time web deployment
+- ✅ Best suited for text and NLP classification tasks
+
+### 🧪 3 Naive Bayes Variants Compared
+
+| Model | Accuracy | Precision |
+|-------|----------|-----------|
+| ⭐ Multinomial NB | 97.58% | 100.00% |
+| Bernoulli NB | 98.33% | 99.24% |
+| Gaussian NB | 87.63% | 71.76% |
 
 ---
