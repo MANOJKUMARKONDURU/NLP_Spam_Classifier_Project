@@ -8,15 +8,15 @@
 
 - [Overview](#-overview)
 - [Demo](#-demo)
-- [Features](#features)
+- [Features](#-features)
 - [Dataset](#-dataset)
-- [Project Structure](#project-structure)
-- [NLP Pipeline](#nlp-pipeline)
-- [Model Performance](#model-performance)
-- [Installation](#installation)
-- [How to Run](#how-to-run)
-- [Tech Stack](#tech-stack)
-- [Results](#results)
+- [Project Structure](#-project-structure)
+- [NLP Pipeline](#-nlp-pipeline)
+- [Model Performance](#-model-performance)
+- [Installation](#-installation)
+- [How to Run](#-how-to-run)
+- [Tech Stack](#-tech-stack)
+- [Results](#-results)
 
 ---
 
@@ -54,5 +54,21 @@ The model was trained on the **SMS Spam Collection Dataset** containing 5,572 re
 | Target | spam / ham |
 
 > The dataset is imbalanced — 86.6% ham vs 13.4% spam. This makes **precision** a more important metric than accuracy to avoid false positives.
+
+---
+
+## 📁 Project Structure
+
+```
+nlp-spam-classifier/
+│
+├── app.py                  # Streamlit web application
+├── spam_detection.ipynb    # Full project notebook (EDA + Training)
+├── model.pkl               # Trained Multinomial Naive Bayes model
+├── vectorizer.pkl          # Fitted TF-IDF vectorizer
+├── spam.csv                # Dataset
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
+```
 
 ---
