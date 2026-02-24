@@ -27,3 +27,32 @@ This is a complete end-to-end machine learning project that detects whether an S
 The model was trained on the **SMS Spam Collection Dataset** containing 5,572 real-world messages and uses a **Multinomial Naive Bayes** classifier with **TF-IDF Vectorization** to achieve state-of-the-art results.
 
 ---
+
+## 🎯 Features
+
+- ✅ Real-time spam detection with confidence score
+- ✅ Complete NLP preprocessing pipeline
+- ✅ Comparison of 10+ ML algorithms
+- ✅ Interactive dark-themed Streamlit web app
+- ✅ Prediction history tracking
+- ✅ Example spam and ham messages to test
+- ✅ Word cloud visualizations
+- ✅ Live character and word counter
+
+---
+
+## 📊 Dataset
+
+| Property | Details |
+|----------|---------|
+| Name | SMS Spam Collection Dataset |
+| Source |[ UCI Machine Learning Repository ]([url](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset))|
+| Total Messages | 5,572 |
+| Spam Messages | 747 (13.4%) |
+| Ham Messages | 4,825 (86.6%) |
+| Features | Message text |
+| Target | spam / ham |
+
+> The dataset is imbalanced — 86.6% ham vs 13.4% spam. This makes **precision** a more important metric than accuracy to avoid false positives.
+
+---
