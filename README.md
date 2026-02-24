@@ -9,7 +9,7 @@
 - [Overview](#overview)
 - [Demo](#demo)
 - [Features](#features)
-- [Dataset](#dataset)
+- [Dataset](# 📊 Dataset)
 - [Project Structure](#project-structure)
 - [NLP Pipeline](#nlp-pipeline)
 - [Model Performance](#model-performance)
