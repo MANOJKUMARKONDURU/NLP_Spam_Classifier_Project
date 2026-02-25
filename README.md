@@ -87,14 +87,14 @@ The model was trained on the **SMS Spam Collection Dataset** containing 5,572 re
 > **Most Common Spam Words:**
  - free, call, click, winner, prize, cash, urgent, claim, text, reply
 
-> **Pattern:** Action-oriented words designed to prompt immediate user response.
+**Pattern:** Action-oriented words designed to prompt immediate user response.
 
 ### ✅ Top Ham Keywords ([Ham Word Cloud Image](./screenshots/wordcloud-ham.png))
 
 > **Most Common Ham Words:**
  - thanks, meeting, tomorrow, please, hello, time, work, day, good, see
 
-> **Pattern:** Natural conversational language for legitimate communication.
+ **Pattern:** Natural conversational language for legitimate communication.
 
 ### 📈 Top 30 Spam Keywords ([Bar Chart Image](./screenshots/top-spam-keywords.png))
 
