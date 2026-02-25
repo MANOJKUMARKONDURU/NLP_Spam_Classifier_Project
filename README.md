@@ -57,7 +57,7 @@ The model was trained on the **SMS Spam Collection Dataset** containing 5,572 re
 
 ---
 ## 📊 Exploratory Data Analysis
-### 1. 📊 Dataset
+### 📦 Dataset
 
 | Property | Details |
 |----------|---------|
@@ -71,7 +71,7 @@ The model was trained on the **SMS Spam Collection Dataset** containing 5,572 re
 
 > ⚠️ The dataset is imbalanced — 86.6% ham vs 13.4% spam. This makes **precision** a more important metric than accuracy to avoid false positives where a legitimate message is wrongly marked as spam.
 
-### 2. Feature Correlation Heatmap ([Correlation Heatmap image](./screenshots/correlation-heatmap.png))
+### 🔥 Feature Correlation Heatmap ([Correlation Heatmap image](./screenshots/correlation-heatmap.png))
 
 | Feature Pair | Correlation | Insight |
 |--------------|-------------|---------|
@@ -80,25 +80,25 @@ The model was trained on the **SMS Spam Collection Dataset** containing 5,572 re
 | num_words ↔ num_sentences | 0.68 | 🟠 Moderate correlation |
 | num_sentences ↔ message_type | 0.26 | ⚪ Weak predictor |
 
-**Decision:** Selected TF-IDF features (3,000 dimensions) over raw counts to avoid multicollinearity and capture semantic meaning.
+> **Decision:** Selected TF-IDF features (3,000 dimensions) over raw counts to avoid multicollinearity and capture semantic meaning.
 
-### 3. Top Spam Keywords ([Spam Word Cloud image](./screenshots/wordcloud-spam.png))
+### 🚨 Top Spam Keywords ([Spam Word Cloud image](./screenshots/wordcloud-spam.png))
 
-**Most Common Spam Words:**
-- free, call, click, winner, prize, cash, urgent, claim, text, reply
+> **Most Common Spam Words:**
+ - free, call, click, winner, prize, cash, urgent, claim, text, reply
 
-**Pattern:** Action-oriented words designed to prompt immediate user response.
+> **Pattern:** Action-oriented words designed to prompt immediate user response.
 
-### 4. Top Ham Keywords ([Ham Word Cloud Image](./screenshots/wordcloud-ham.png))
+### ✅ Top Ham Keywords ([Ham Word Cloud Image](./screenshots/wordcloud-ham.png))
 
-**Most Common Ham Words:**
-- thanks, meeting, tomorrow, please, hello, time, work, day, good, see
+> **Most Common Ham Words:**
+ - thanks, meeting, tomorrow, please, hello, time, work, day, good, see
 
-**Pattern:** Natural conversational language for legitimate communication.
+> **Pattern:** Natural conversational language for legitimate communication.
 
-### 5. Top 30 Spam Keywords ([Bar Chart Image](./screenshots/top-spam-keywords.png))
+### 📈 Top 30 Spam Keywords ([Bar Chart Image](./screenshots/top-spam-keywords.png))
 
-Frequency analysis shows which words are strongest spam indicators. Keywords like "call", "free", "winner" appear exclusively in spam messages.
+> Frequency analysis shows which words are strongest spam indicators. Keywords like "call", "free", "winner" appear exclusively in spam messages.
 
 ---
 
