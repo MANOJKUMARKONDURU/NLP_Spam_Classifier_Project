@@ -47,11 +47,10 @@ The model was trained on the **SMS Spam Collection Dataset** containing 5,572 re
 ## ✨ Features
 
 - ⚡ Real-time spam detection with confidence score
-  ![Real-time Detection](./screenshots/app-interface.png)
 - 🔤 Complete NLP text preprocessing pipeline
 - 🤖 10 machine learning algorithms compared
-- 🎨 Interactive dark-themed Streamlit web app
-- 🕓 Prediction history tracking
+- 🎨 Interactive dark-themed Streamlit web app ([see screenshot](./screenshots/app-interface.png))
+- 🕓 Prediction history tracking ([see screenshot](./screenshots/history.png))
 - 💡 Example spam and ham messages to test instantly
 - ☁️ Word cloud visualizations for spam and ham
 - 🔢 Live character and word counter in the UI
