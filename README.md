@@ -2,6 +2,16 @@
 
 > An end-to-end NLP project that classifies SMS/Email messages as Spam or Ham. Built with Python, NLTK &amp; Scikit-learn using Tokenization, Stemming, TF-IDF Vectorization and Multinomial Naive Bayes. Achieves 97% accuracy &amp; 100% precision on 5,572 messages. Deployed as an interactive web app using Streamlit.
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![NLTK](https://img.shields.io/badge/NLTK-154f3c?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+
+## 🌐 Live Demo
+
+👉 **[Try the App Here](https://nlpspamclassifierproject-xgtfrjue5lszz9wtlfy5b9.streamlit.app/)**
+
 ---
 
 ## 📌 Table of Contents
