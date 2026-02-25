@@ -109,8 +109,8 @@ Every message goes through this preprocessing pipeline before prediction:
 
 **Example:**
 ```
-Input  :  "FREE entry! Win a £1000 prize. Call NOW!!!"
-Output :  "free entri win prize call"
+Input  :  "FREE entry! Win a $1000 prize. Call NOW!!!"
+Output :  "free entry win prize call"
 ```
 
 ---
@@ -162,7 +162,7 @@ Three models achieved 100% precision — ETC, KNN and Multinomial NB. Here is wh
 **1. Clone the repository**
 ```bash
 git clone https://github.com/MANOJKUMARKONDURU/NLP_Spam_Classifier_Project.git
-cd nlp-spam-classifier
+cd NLP_Spam_Classifier_Project
 ```
 
 **2. Install dependencies**
