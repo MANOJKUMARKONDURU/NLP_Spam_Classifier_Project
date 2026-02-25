@@ -151,8 +151,7 @@ Three models achieved 100% precision — ETC, KNN and Multinomial NB. Here is wh
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/MANOJKUMARKONDURU/NLP_Spam_Classifier_Project
-.git
+git clone https://github.com/MANOJKUMARKONDURU/NLP_Spam_Classifier_Project.git
 cd nlp-spam-classifier
 ```
 
