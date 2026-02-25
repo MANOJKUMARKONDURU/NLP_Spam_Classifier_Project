@@ -146,3 +146,79 @@ Three models achieved 100% precision — ETC, KNN and Multinomial NB. Here is wh
 | Gaussian NB | 87.63% | 71.76% |
 
 ---
+
+## ⚙️ Installation
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/your-username/nlp-spam-classifier.git
+cd nlp-spam-classifier
+```
+
+**2. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**3. Download NLTK data**
+```python
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+```
+
+---
+
+## 🚀 How to Run
+
+**Run the Streamlit app locally:**
+```bash
+streamlit run app.py
+```
+
+Then open your browser at `http://localhost:8501`
+
+> 📝 Make sure `model.pkl` and `vectorizer.pkl` are in the same directory as `app.py`. If not, run the full notebook first to generate them.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools |
+|----------|-------|
+| 🐍 Language | Python 3.8+ |
+| 🔤 NLP | NLTK, String |
+| 🤖 ML | Scikit-learn |
+| 📐 Vectorization | TF-IDF (max_features=3000) |
+| 🧠 Model | Multinomial Naive Bayes |
+| 📊 Visualization | Matplotlib, Seaborn, WordCloud |
+| 🌐 Web App | Streamlit |
+| 💾 Serialization | Pickle |
+| 📓 Notebook | Google Colab |
+
+---
+
+## ✅ Results
+
+```
+🤖 Model        :  Multinomial Naive Bayes
+📐 Vectorizer   :  TF-IDF (max_features=3000)
+🎯 Accuracy     :  97.58%
+✅ Precision    :  100.00%
+🧪 Test Size    :  20%  (1,114 messages)
+📚 Train Size   :  80%  (4,458 messages)
+🎲 Random State :  2
+```
+
+---
+
+## 🙌 Acknowledgements
+
+- 📦 Dataset: [SMS Spam Collection — Kaggle / UCI](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
+- 🔤 NLTK for NLP preprocessing tools
+- 🤖 Scikit-learn for machine learning algorithms
+- 🌐 Streamlit for the interactive web interface
+
+---
+
+<p align="center">Built with ❤️ using Python · NLTK · Scikit-learn · Streamlit</p>
