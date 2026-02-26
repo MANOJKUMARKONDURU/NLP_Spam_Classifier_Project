@@ -12,7 +12,7 @@
 
 👉 **[Try the App Here](https://nlpspamclassifierproject-xgtfrjue5lszz9wtlfy5b9.streamlit.app/)**
 
-### 🖼️ Screenshots
+## 🖼️ Screenshots
 
 ![App Interface](./screenshots/app-interface.png)
 ![Spam Detection Example](./screenshots/spam-example.png)
